@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Task Clone</title>
+    <title>Rafael's To Do App</title>
 </head>
 <body>
 
@@ -12,22 +12,20 @@
 
 
     <script>
-        let todo1 = 'Get Groceries';
-        let todo2 = 'Wash Car';
-        let todo3 = 'Make Dinner';
+       
+        let todos = ['Get Groceries', 'Wash Car', 'Make Dinner'];
+        todos.push('another todo');
 
-        function addTodo (todoTitle) {
+        todos.forEach (function (todoTitle) {
             let element = document.createElement('div');
             element.innerText = todoTitle;
             document.body.appendChild(element);
-        }
+        })
 
         addTodo (todo1);
         addTodo (todo2);
         addTodo (todo3);
 
-
-        
 
     </script>
     
